@@ -126,32 +126,36 @@ section button {
   display: grid;
   max-width: 100%;
   grid-area: portfolio-one;
-  background-image: url(../images/coding-four.jpg);
+  background-image: url(../images/landing-page.jpg);
   color: white;
   height: 500px;
-  background-position: center;
+  background-position: top;
   background-size: cover;
+  cursor: pointer;
 }
 
 .portfolio-two {
   display: grid;
-  align-self: stretch;
   max-width: 100%;
   grid-area: portfolio-two;
-  background-image: url(../images/coding-five.jpg);
+  background-image: url(../images/passport-for-living.jpg);
   color: white;
   height: 300px;
-  background-position: center;
+  background-position: top;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .portfolio-three {
   display: grid;
   max-width: 100%;
   grid-area: portfolio-three;
-  background-image: url(../images/coding-six.jpg);
+  background-image: url(../images/artwave-west.jpg);
   color: white;
   height: 300px;
   background-position: center;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .portfolio-h3 {
@@ -171,4 +175,69 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 800px){
+
+  .portfolio-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    height: 50%;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 950px;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #647AA3;
+    color: #fff;
+  }
+
+  header h1, header nav {
+    margin: 15px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/zara-aitken.png");
+    background-repeat: no-repeat;
+    height: 50%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section h2 {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
 }
