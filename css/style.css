@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin:0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+/*Header and navigation*/
+header {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #334195;
+  color: #fff;
+}
+
+header h1, header nav {
+  margin: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 20px;
+}
+
+/*Hero image, text and button*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/Users/theki/bootcamp/week-2/challenge/starter/images/zara-aitken.png");
+  background-repeat: no-repeat;
+  height: 75%;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+
+section h2 {
+  margin: 15px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+/*
+section button {
+  margin: 15px;
+  background-color: #C6EBBE;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-size: 20px; 
+}*/
+
+.profile {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1;
+  height: 600px;
+}
+
+.profile-photo {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+}
+
+.contact-info {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+
+.h3-contact, .tel, .email, .h3-bio, .bio-info {
+  margin: 15px;
+}
+
+footer {
+  background-color: #334195;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
