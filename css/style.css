@@ -34,7 +34,7 @@ header nav a {
 
 /*Hero image, text and button*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/Users/theki/bootcamp/week-2/challenge/starter/images/zara-aitken.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/zara-aitken.png");
   background-repeat: no-repeat;
   height: 75%;
   display: flex;
