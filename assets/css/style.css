@@ -24,10 +24,7 @@ header {
   height: 60px;
   background-color: #647AA3;
   color: #fff;
-}
-
-header h1, header nav {
-  margin: 100px;
+  padding: 0 100px;
 }
 
 header h1 {
@@ -79,25 +76,22 @@ section button {
 
 .profile {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1;
-  height: 600px;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 100px 0 100px;
 }
 
 .profile-photo {
   display: grid;
   height: 500px;
   width: 500px;
-  justify-self: center;
+  justify-self: flex-start;
   align-self: center;
-  margin: auto;
 }
 
 .contact-info {
   display: grid;
-  justify-self: center;
+  justify-self: flex-end;
   align-self: center;
-  width: 70%;
 }
 
 #about, #contact {
@@ -139,7 +133,7 @@ section button {
   grid-area: portfolio-two;
   background-image: url(../images/passport-for-living.jpg);
   color: white;
-  height: 300px;
+  height: 400px;
   background-position: top;
   background-size: cover;
   cursor: pointer;
@@ -151,7 +145,7 @@ section button {
   grid-area: portfolio-three;
   background-image: url(../images/artwave-west.jpg);
   color: white;
-  height: 300px;
+  height: 400px;
   background-position: center;
   background-size: cover;
   cursor: pointer;
