@@ -28,7 +28,7 @@ header {
 }
 
 header h1, header nav {
-  margin: 20px;
+  margin: 100px;
 }
 
 header h1 {
@@ -87,8 +87,8 @@ section button {
 
 .profile-photo {
   display: grid;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   justify-self: center;
   align-self: center;
   margin: auto;
@@ -116,7 +116,7 @@ section button {
   grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
   gap: 15px;
-  margin: 5%;
+  margin: 100px;
   grid-template-areas:
   "portfolio-one portfolio-one portfolio-one"
   "portfolio-two portfolio-two portfolio-three"
@@ -180,17 +180,37 @@ footer {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 912px){
+@media screen and (max-width: 915px){
+  
+  header h1, header nav {
+    margin: 60px;
+  }
+  
   .hero-image {
     background-position: right;
+    height: 50%;
   }
+
+  .profile-photo {
+    height: 80%;
+    width: 88%;
+  }
+
+  .contact-info {
+    height: 90%;
+    width: 80%;
+    margin: 25px 0 5px 0;
+}
+
+.portfolio-images {
+  margin: 5%;
+}
 }
 
 @media screen and (max-width: 826px){
-
-  .portfolio-images {
-    display: grid;
-    grid-template-columns: 1fr;
+  
+  header h1, header nav {
+    margin: 60px;
   }
 
   .hero-image {
@@ -202,14 +222,18 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 950px;
+    height: 1050px;
   }
 
   .profile-photo {
-    height: 450px;
-    width: 450px;
-    margin: 20px 0;
+    height: 90%;
+    width: 90%;
   }
+
+  .contact-info {
+    height: 100%;
+    width: 80%;
+}
 
   .portfolio-images {
     display: grid;
@@ -274,11 +298,6 @@ footer {
     font-weight: 100;
   }
 
-  .profile-photo {
-    height: 250px;
-    width: 250px;
-  }
-
   .portfolio-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -292,5 +311,12 @@ footer {
 
   .portfolio-h3 {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 380px){
+
+  section h2 {
+    font-size: 25px;
   }
 }
