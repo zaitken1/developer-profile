@@ -95,12 +95,20 @@ section h2 {
 }
 
 /*Portfolio grid*/
+.my-portfolio-heading {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto 0;
+  font-size: 30px;
+}
+
 .portfolio-images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
   gap: 15px;
-  margin: 100px;
+  margin: 35px 100px;
   grid-template-areas:
   "portfolio-one portfolio-one portfolio-one"
   "portfolio-two portfolio-two portfolio-three"
@@ -316,6 +324,7 @@ footer {
   .portfolio-one, .portfolio-two, .portfolio-three {
     height: 300px;
   }
+}
 
 @media screen and (max-width: 380px){
 
@@ -325,7 +334,7 @@ footer {
   }
 
   header h1, header nav {
-    margin:0;
+    margin: 0;
   }
 
   section h2 {
