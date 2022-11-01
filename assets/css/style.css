@@ -56,9 +56,6 @@ header nav a {
   align-items: center;
   width: 100%;
   color: #fff;
-}
-
-section h2 {
   margin: 15px;
   font-size: 50px;
   font-weight: 100;
@@ -95,7 +92,7 @@ section h2 {
 }
 
 /*Portfolio grid*/
-.my-portfolio-heading {
+#portfolio {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -124,6 +121,7 @@ section h2 {
   background-position: top;
   background-size: cover;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .portfolio-two {
@@ -136,6 +134,7 @@ section h2 {
   background-position: top;
   background-size: cover;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .portfolio-three {
@@ -148,9 +147,10 @@ section h2 {
   background-position: center;
   background-size: cover;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.portfolio-h3 {
+.portfolio-h4 {
   display: flex;
   justify-items: flex-start;
   align-self: flex-end;
@@ -159,7 +159,6 @@ section h2 {
   background-color: rgba(0, 0, 0, 0.4);
   height: 30px;
   color: white;
-  text-decoration: none;
 }
 
 footer {
@@ -181,7 +180,6 @@ footer {
 @media screen and (max-width: 1030px){
   header {
     padding: 0 30px;
-    height: 60px;
   }
 
   .profile {
@@ -198,10 +196,6 @@ footer {
 }
 
 @media screen and (max-width: 915px){
-  
-  header {
-    padding: 0 30px;
-  }
   
   .hero-image {
     background-position: right;
@@ -231,32 +225,10 @@ footer {
 
 @media screen and (max-width: 826px){
 
-  header {
-    padding: 0 30px;
-  }
-
-  header h1, header nav {
-    margin: 0;
-  }
-
-  .hero-image {
-    height: 50%;
-    background-position: right;
-  }
-
   .profile {
     grid-template-columns: 1fr;
     padding: 30px;
   }
-
-  .profile-photo {
-    height: auto;
-    width: 100%;
-  }
-
-  .contact-info {
-    width: 100%;
-}
 
   .portfolio-images {
     grid-template-columns: 1fr 1fr;
@@ -265,7 +237,7 @@ footer {
     "portfolio-two  portfolio-three"
   }
 
-  .portfolio-h3 {
+  .portfolio-h4 {
     font-size: 15px;
   }
 }
@@ -273,12 +245,6 @@ footer {
 @media screen and (max-width: 640px){
 
   header {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #647AA3;
-    color: #fff;
     padding: 0 15px;
   }
 
@@ -291,31 +257,16 @@ footer {
   }
 
   header nav a {
-    text-decoration: none;
-    color: #fff;
     margin: 10px;
     font-size: 15px;
   }
 
-  .hero-image {
-    height: 50%;
-    background-position: right;
-  }
-
-  section h2 {
+  .hero-text {
     font-size: 30px;
   }
 
   .profile {
     padding: 20px;
-  }
-
-  .profile-photo{
-    width: 100%;
-  }
-
-  .contact-info {
-    width: 100%;
   }
 
   .portfolio-images {
@@ -331,7 +282,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 410px){
 
   header{
     padding: 10px;
@@ -342,7 +293,7 @@ footer {
     margin: 0;
   }
 
-  section h2 {
+  .hero-text {
     font-size: 25px;
   }
 }
