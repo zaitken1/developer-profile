@@ -172,10 +172,16 @@ footer {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 1270px){
+  .contact-info {
+    padding: 0 0 0 25px;
+  }
+}
+
 @media screen and (max-width: 1030px){
   header {
-    padding: 30px;
-    height: 40px;
+    padding: 0 30px;
+    height: 60px;
   }
 
   .profile {
@@ -194,7 +200,7 @@ footer {
 @media screen and (max-width: 915px){
   
   header {
-    padding: 30px;
+    padding: 0 30px;
   }
   
   .hero-image {
@@ -271,10 +277,9 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
     background-color: #647AA3;
     color: #fff;
-    padding: 15px;
+    padding: 0 15px;
   }
 
   header h1 {
